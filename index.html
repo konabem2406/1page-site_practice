@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="毎年大人気の「DHWパンフェア」が今年もスタート！ 春はすぐそこ！今年も大人気の「DHWパンフェア」で新作パンをチェックしよう！各店舗に、今年のトレンドなドーナツも多数取り揃えています。DHWモール限定のパンもたくさんあるので、ぜひ足を運んでみてね。">
+    <title>DHW MALL 春の新作いっぱい！パンフェア</title>
+    <!-- <link rel="stylesheet" href="assets/css/destyle.css"> -->
+</head>
+<body>
+    <div id="container" class="container">
+    <header class="header">
+        <!-- ロゴは押したらTOPに戻るとかが多いので、aタグを付けようね〜 -->
+        <h1 class="header__topic"><a href="#">DHW MALL</a></h1>
+        <!-- nav:ナビゲーション部分を囲むタグってとりあえず覚えておけばOK -->
+        <nav class="nav">
+            <!-- メニューにおけるヘッダーみたいな箇所だから、"nav__header" BEMを意識してクラス名をつけていく-->
+            <div class="nav__header"> 
+                <p>DHW MALL</p>
+                <img class="nav__btn" src="assets/images/btn-close.svg" alt="close">
+            </div>
+            <ul class="nav__list">
+                <!-- 🍔メニューから開いた内容をまず一番最初に書いていくよ -->
+                <li class="nav__item"><a href="#"><img src="assets/images/icon-nav_top.svg" alt="Top"></a>TOP</li>
+                <li class="nav__item"><a href="#lineUp"><img src="assets/images/icon-nav-lineup.svg" alt="Line up"></a>Line up</li>
+                <li class="nav__item"><a href="#news"><img src="assets/images/icon-nav-news.svg" alt="News"></a>News</li>
+                <li class="nav__item"><a href="#access"><img src="assets/images/icon-nav_access.svg" alt="Access"></a>Access</li>
+            </ul>
+        </nav>
+        <!-- 🍔はボタンなので特にPとかでマークアップする必要はない -->
+         <!-- htmlには必要なものを全部置いていく。その後CSSやJava Scriptで表示／非表示や制御を加えていく -->
+        <img class="header__btn" src="assets/images/btn-menu.svg" alt="menu icon">
+    </header>
+
+    <main class="main">
+        <article class="article">
+            <header class="article__header">メインビジュアルやキャプションが入るよ
+                <p class="mainImg">
+                    <img class="mainImg__SP" src="assets/images/main-sp.jpg" alt="春の新作いっぱい！パンフェア">
+                    <img class="mainImg__PC" src="assets/images/main-pc.jpg" alt="春の新作いっぱい！パンフェア">
+                </p>
+                <div> <!-- spBrは、改行が必要なbrタグにだけクラス名をつける -->
+                    <h2 class="mainTopics__name">毎年大人気の<br class="spBr">「DHWパンフェア」が<br>今年もスタート！ </h2>
+                    <p class="mainTopics__txt">春はすぐそこ！今年も大人気の「DHWパンフェア」で新作パンをチェックしよう！<br>各店舗に、今年のトレンドなドーナツも多数取り揃えています。<br>DHW モール限定のパンもたくさんあるので、ぜひ足を運んでみてね。</p>
+                </div>
+            </header>
+            <!-- モディファイヤーの書き方をチェック！「lineUp」間を話しちゃうと別名になっちゃうので詰めて書く。キャメルケースという書き方 --><!-- id名はちゃんとnavで名付けたリンクと等しくすること -->
+            <section id="lineUp" class="section section--lineUp">
+                <h3 class="section__topic">Line up</h3>
+                <ul class="lineUp">　<!-- リストタグは一回、１項目目のliを全部作りきってから複製、というやり方が早い！ -->
+                    <li class="lineUp__item">
+                        <p class="lineUp__img"><img src="assets/images/thum-lineup01.jpg" alt="オープンサラダサンドセット"></p>
+                        <div class="lineUp__content">
+                            <h4 class="lineUp_name">ごろごろアボカドとスパイシーなハムのオープンサラダサンドセット</h4>
+                            <p class="lineUp__category">期間限定</p>
+                            <p class="lineUp__txt">角切りアボカドがゴロゴロはいって食べごたえ抜群◎ 相性抜群なマヨネーズたっぷりのスパイシーなハムを挟んだオープンサラダセットです。お外で食べるランチにピッタリ♪</p>
+                            <div class="detail">
+                                <p class="detail__location">Digital Bakery［B1／改札内］</p>
+                                <p class="detail__txt">アボカドとハムのオープンサラダサンドセット<br>
+                                    価格：980円</p>
+                            </div>
+                            <a class="btn" href="#">店舗はこちら</a>
+                        </div> <!--div class="lineUp__content ここまで-->
+                    </li>
+                    <li class="lineUp__item">
+                        <p class="lineUp__img"><img src="assets/images/thum-lineup02.jpg" alt="ミルキーパンシリーズ"></p>
+                        <div class="lineUp__content">
+                            <h4 class="lineUp_name">春限定のパンも！デジタルハリウッド ミルキーパンシリーズ</h4>
+                            <p class="lineUp__category">期間限定</p>
+                            <p class="lineUp__txt">デジタルハリウッド牛乳をふんだんに使った、ミルキーなふんわりパンシリーズの新作が登場！やさしい甘みで、ふわふわ柔らかい食感をお楽しみください♪お花見にぴったりです。</p>
+                            <div class="detail">
+                                <p class="detail__location">Hollywood Bakery［B1／改札内］</p>
+                                <p class="detail__txt">デジタルハリウッド ミルキーパンシリーズ<br>
+                                    価格：各種320円</p>
+                            </div>
+                            <a class="btn" href="#">店舗はこちら</a>
+                        </div> <!--div class="lineUp__content ここまで-->
+                    </li>
+                    <li class="lineUp__item">
+                        <p class="lineUp__img"><img src="assets/images/thum-lineup03.jpg" alt="おからドーナツ"></p>
+                        <div class="lineUp__content">
+                            <h4 class="lineUp_name">ヘルシーな“かりっかりドーナツ”が春のトレンド！老舗洋食店のおからドーナツ</h4>
+                            <p class="lineUp__category">期間限定</p>
+                            <p class="lineUp__txt">老舗洋食店が考案した“かりっかりドーナツ”が期間限定で登場！トレンドのかりっかりな生地なのに、なんとおからが使われていてヘルシーです◎アツアツをほお張って！</p>
+                            <div class="detail">
+                                <p class="detail__location">Digital Hollywood Bakery［B1／改札内］</p>
+                                <p class="detail__txt">おからドーナツ<br>
+                                    価格：各種500円</p>
+                            </div>
+                            <a class="btn" href="#">店舗はこちら</a>
+                        </div> <!--div class="lineUp__content ここまで-->
+                    </li>
+                    
+                </ul>
+            </section>
+
+            <section id="access" class="section section--access">
+                <h3 class="section__topic">Access</h3>
+                <address class="address"><img src="assets/images/icon-nav_access.svg" alt="">123-4567　東京都千代田区神田駿河台0-1</address>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6480.3764208337325!2d139.76472282508573!3d35.69698582100905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1722947153169!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <ul class="directions">
+                    <li class="directions__item">
+                        <h4 class="directions__topic">徒歩・自転車・バス・電車でご来店の場合</h4>
+                        <p class="directions__txt">1F デジハリ銀行側入口よりご入店いただき、右側のエレベーターをご利用ください。</p>
+                    </li>
+                    <li class="directions__item">
+                        <h4 class="directions__topic">お車でご来店の場合</h4>
+                        <p class="directions__txt">立体駐車場内のエレベーターより5F 屋上駐車場へ向かっていただき、5F 店内入口よりご入店ください。<br>
+                            ※1F～4Fの立体駐車場側店内エレベーターは9:00からの運転となります。</p>
+                    </li>
+                </li>
+            </section>
+
+            <section id="news" class="section section--news">
+                <h3 class="section__topic">News</h3>
+                <dl class="news__list"> <!-- 一つの箱の中に、タイトルとテキストという形なので、dl.dd.dtタグでいこう！ -->
+                    <dt class="news__topic">
+                        <time datetime="2024-04-12">04.12</time>
+                        <span>ゴールデンウィーク営業時間のお知らせ</span> <!-- 他の装飾をかけたいときに自由に使っていい囲みとして便利なインライン要素なのがspanタグ -->
+                    </dt>
+                    <dd class="news__txt">ゴールデンウィークは店舗によって営業時間が異なります。詳しくはこちらをご覧ください。</dd>
+                    <dt class="news__topic">
+                        <time datetime="2024-04-10">04.10</time>
+                        <span>期間限定メニューが登場</span>
+                    </dt>
+                    <dd class="news__txt">新店舗に新しく「期間限定」のメニューが登場しました！ここだけでしか変えないメニューが盛沢山です！</dd>
+                    <dt class="news__topic">
+                        <time datetime="2024-04-05">04.05</time>
+                        <span>「DHWパンフェア」スタートしました！</span>
+                    </dt>
+                    <dd class="news__txt">本日10:00よりオープンになります。ぜひお立ち寄りください。</dd>
+                </dl>
+            </section>
+        </article>
+    </main>
+    
+    <footer class="footer">
+        <p class="copyright"><small> 2024 DHW MALL</small></p>
+    </footer>
+    </div>
+</body>
+</html>
